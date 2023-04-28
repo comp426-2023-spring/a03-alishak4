@@ -2,6 +2,7 @@
 import { rps } from "../lib/rpsls.js"
 import minimist from 'minimist'
 const args = minimist(process.argv.slice(2));
+// console.log(args);
 
 if(args.h){
     console.log(`
@@ -25,9 +26,16 @@ else if(args.r){
         - Rock CRUSHES Scissors
     `)
 }
-else {
-    console.log(args)
-    console.log(rps(args))
+else if(process.argv.length <= 2){
+    console.log(rps())
 }
+else{
+        // console.log("else statement")
+        console.log(rps(args))
+    }
+    
+    
+    // console.log(rps(args))
+
 
 // rps(args)
