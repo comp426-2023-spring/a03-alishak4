@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "a03",
   "main": "./lib/rpsls.js",
+  "type": "module",
   "bin": {
     "node-rps": "./bin/rps-cli.js",
     "node-rpsls": "rpsls-cli.js"
