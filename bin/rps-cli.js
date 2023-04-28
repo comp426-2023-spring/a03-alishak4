@@ -35,7 +35,6 @@ import { rps } from "../lib/rpsls.js"
 //     }
     
     
-//     // console.log(rps(args))
+    console.log(rps())
 
 
-rps()
