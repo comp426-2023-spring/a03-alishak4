@@ -1,3 +1,6 @@
 #!/usr/bin/env node
 import { rps } from "../lib/rpsls.js"
-rps()
+import minimist from 'minimist'
+const args = minimist(process.argv.slice(2));
+console.log(rps(args))
+// rps(args)
